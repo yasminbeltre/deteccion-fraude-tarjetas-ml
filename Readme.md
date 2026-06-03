@@ -1,7 +1,7 @@
 # 💳 Detección de Fraude en Transacciones Financieras con XGBoost, Random Forest y SMOTE
 
 ![Python](https://img.shields.io/badge/Python-3.x-blue?logo=python)
-[![Open in Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1Ghg3x6_B_KEGhm1KDBc5-izQ0OxBi4v2)
+https://colab.research.google.com/github/yasminbeltre/deteccion-fraude-tarjetas-ml/blob/main/Detección_de_Fraude_en_Transacciones_Financieras_con_XGBoost__Random_Forest_y_SMOTE.ipynb
 ![Google Colab](https://img.shields.io/badge/Google%20Colab-Notebook-orange?logo=googlecolab)
 ![XGBoost](https://img.shields.io/badge/XGBoost-ML%20Avanzado-green)
 ![Estado](https://img.shields.io/badge/Estado-Completado-brightgreen)
