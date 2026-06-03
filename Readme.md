@@ -87,6 +87,8 @@ Identificar transacciones fraudulentas en un dataset con alto desbalance de clas
 > ✅ El modelo **XGBoost** fue seleccionado como modelo final por su mayor **AUC-ROC** y mejor capacidad para detectar casos de fraude (recall más alto).
 
 > ⚠️ **Nota técnica:** El accuracy del 99% de Random Forest es engañoso en datasets desbalanceados — el modelo simplemente predice "normal" casi siempre. El AUC-ROC es la métrica relevante en este contexto.
+> 🔄 **Versión en revisión:** Los resultados de AUC-ROC están siendo optimizados. 
+> Una versión mejorada del notebook está en proceso de actualización.
 
 ---
 
