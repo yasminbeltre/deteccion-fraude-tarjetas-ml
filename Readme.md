@@ -1,7 +1,7 @@
 # 💳 Detección de Fraude en Transacciones Financieras con XGBoost, Random Forest y SMOTE
 
 ![Python](https://img.shields.io/badge/Python-3.x-blue?logo=python)
-https://colab.research.google.com/github/yasminbeltre/deteccion-fraude-tarjetas-ml/blob/main/Detección_de_Fraude_en_Transacciones_Financieras_con_XGBoost__Random_Forest_y_SMOTE.ipynb
+[![Open in Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/yasminbeltre/deteccion-fraude-tarjetas-ml/blob/main/Detección_de_Fraude_en_Transacciones_Financieras_con_XGBoost__Random_Forest_y_SMOTE.ipynb)
 ![Google Colab](https://img.shields.io/badge/Google%20Colab-Notebook-orange?logo=googlecolab)
 ![XGBoost](https://img.shields.io/badge/XGBoost-ML%20Avanzado-green)
 ![Estado](https://img.shields.io/badge/Estado-Completado-brightgreen)
@@ -81,13 +81,12 @@ Identificar transacciones fraudulentas en un dataset con alto desbalance de clas
 
 | Modelo | AUC-ROC | Accuracy | Recall (Fraude) | F1-Score (Fraude) |
 |---|---|---|---|---|
-| Random Forest | 0.5194 | 99% | 4% | 0.07 |
-| **XGBoost** | **0.5583** | **77%** | **34%** | **0.02** |
+| **Random Forest** | **0.7945** | **99%** | **45%** | **0.60** |
+| XGBoost | 0.7763 | 93% | 56% | 0.17 |
 
-> ✅ El modelo **XGBoost** fue seleccionado como modelo final por su mayor **AUC-ROC** y mejor capacidad para detectar casos de fraude (recall más alto).
+> ✅ El modelo **Random Forest** fue seleccionado como modelo final por su mayor **AUC-ROC** y mejor F1-Score en la clase de fraude.
 
 > ⚠️ **Nota técnica:** El accuracy del 99% de Random Forest es engañoso en datasets desbalanceados — el modelo simplemente predice "normal" casi siempre. El AUC-ROC es la métrica relevante en este contexto.
-> 🔄 **Versión en revisión:** Los resultados de AUC-ROC están siendo optimizados. Una versión mejorada del notebook está en proceso de actualización.
 
 ---
 
@@ -102,7 +101,7 @@ Identificar transacciones fraudulentas en un dataset con alto desbalance de clas
 
 ### Hallazgos clave
 
-- **XGBoost superó a Random Forest** en la métrica principal (AUC-ROC: 0.5583 vs 0.5194).
+- **Random Forest superó a XGBoost** en la métrica principal (AUC-ROC: 0.7945 vs 0.7763).
 - **SMOTE mejoró significativamente** la capacidad del modelo para detectar fraude al balancear las clases desiguales.
 - El dataset con 0.72% de fraude representa un reto típico del mundo real en detección de anomalías financieras.
 
@@ -113,6 +112,7 @@ Identificar transacciones fraudulentas en un dataset con alto desbalance de clas
 ```
 ├── Detección_de_Fraude_en_Transacciones_Financieras_con_XGBoost__Random_Forest_y_SMOTE.ipynb
 │                                        # Notebook principal con todo el análisis y código
+├── requirements.txt                     # Dependencias del proyecto
 └── README.md                            # Documentación del proyecto
 ```
 
@@ -143,7 +143,7 @@ Este sistema puede integrarse en plataformas financieras para:
 **Yasmin Beltre**
 Customer Success & Operations Specialist | AI Portfolio – INDOTEL/BID/CYMETRIA 2026
 📍 Santo Domingo, República Dominicana
-🔗 [LinkedIn](https://linkedin.com/in/yasminbeltre)
+🔗 [LinkedIn](https://linkedin.com/in/yasminbeltre) | [GitHub](https://github.com/yasminbeltre)
 
 ---
 
